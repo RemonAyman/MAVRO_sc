@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic Payment</title>
+    <link rel="icon" href="3be07d4d222f06f0333810def3d4dfd7-removebg-preview.png" type="image/png">
+    <link href="electronicpayment.css " rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Payment Portal in Mavro SC</h1>
+    </header>
+    <main>
+        <section id="payment-section">
+            <h2>Complete Your Payment</h2>
+            <img src="3be07d4d222f06f0333810def3d4dfd7-removebg-preview.png">
+            <form id="payment-form">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="card-number">Card Number:</label>
+                    <input type="text" id="card-number" placeholder="1234 5678 9101 1121" required>
+                </div>
+                <div class="form-group">
+                    <label for="expiry-date">Expiry Date:</label>
+                    <input type="month" id="expiry-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="cvv">CVV:</label>
+                    <input type="password" id="cvv" placeholder="123" required>
+                </div>
+                <div class="form-group">
+                    <label for="payment-method">Payment Method:</label>
+                    <select id="payment-method">
+                        <option value="visa">Visa</option>
+                        <option value="mastercard">MasterCard</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-primary">Pay Now</button>
+            </form>
+        </section>
+    </main>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+    (function () {
+        emailjs.init("beshoosadiek@gmail.com"); // ضع معرف المستخدم الخاص بك هنا
+    })();
+</script>
+
+    <footer>
+        <p>Thank you for choosing our service!</p>
+        <p>&copy; 2025 SC Mavro Club Management. All rights reserved.</p>
+    </footer>
+    <script src="electronicpayment.js"></script>
+</body>
+</html>

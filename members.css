@@ -1,0 +1,277 @@
+header {
+    background-color: #006f69; /* Light Turquoise background */
+    padding: 20px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+header .logo img {
+    width: 55px;
+    height: 55px;
+}
+header .logo h2 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: 'Georgia', serif;
+    color: #ffffff; /* Light Gold color */
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+header .logo img {
+    width: 50px;
+    margin-right: 20px;
+}
+
+
+footer {
+    background-color: #006F6A; /* Light Turquoise */
+    color: white;
+    padding: 25px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+nav a.active {
+    background-color: #ff9d00;
+    padding: 12px;
+    border-radius: 12px;
+    color:#ffffff/* Gold color for active link */
+}
+
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    transition: color 0.5s ease, transform 0.3s ease;
+}
+
+.social-icons  a:hover {
+    color: #ff9d00; /* Gold color on hover */
+    transform: scale(1.3);
+}
+
+/* Customize the scrollbar track */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+    height: 12px; /* Height of the scrollbar for horizontal scrolling */
+}
+
+/* Customize the scrollbar track (background) */
+::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Background color of the track */
+    border-radius: 10px; /* Rounded edges */
+}
+
+/* Customize the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+    background: #006f69; /* Color of the thumb */
+    border-radius: 10px; /* Rounded edges for the thumb */
+    border: 2px solid #f0f0f0; /* Add a border around the thumb for contrast */
+}
+
+/* Change the color when hovering over the scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+    background: #004c49; /* Darker shade when hovered */
+}
+
+/* Optional: Hide scrollbar for specific elements */
+.hidden-scrollbar {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.hidden-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
+}
+
+
+
+
+
+/* Table Styling */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+table th {
+    background-color: #003f6a;
+    color: white;
+}
+
+table tr:hover {
+    background-color: #003f6a;
+    color: white;
+}
+
+table button {
+    background-color: #8AAAE5;
+    color: #0c1b34;
+    border: none;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+table button:hover {
+    background-color: #0c1b34;
+    color: white;
+}
+
+
+/* Management Section */
+.management-section {
+    padding: 40px;
+    background-color: #006F6A; /* Main turquoise color */
+    color: white;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 50px auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Styling */
+.management-section h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 12px 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+table th {
+    background-color: #003F6A; /* Dark blue for headers */
+    color: white;
+}
+
+
+
+table tr:hover {
+    background-color: #003F6A; /* Dark blue on hover */
+    color: white;
+}
+
+/* Button Styling */
+table button {
+    background-color: #8AAAE5;
+    color: #0C1B34;
+    border: none;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+table button:hover {
+    background-color: #0C1B34;
+    color: white;
+}
+
+/* Add New Member Button */
+#addRowBtn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#addRowBtn:hover {
+    background-color: #218838;
+}
+
+/* Save Button */
+#saveBtn {
+    background-color: #ff9900;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#saveBtn:hover {
+    background-color: #e68a00;
+}
+
+
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff; /* Light Gold */
+    font-size: 20px;
+    font-weight: 600;
+    padding: 12px 20px;
+    transition: all 0.7s ease;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #ffffff; /* Charcoal Gray background */
+    color: #2E3A59;
+    transform: scale(1.05); /* Slight zoom effect */
+    border-radius: 20PX;
+    transform: 0.7S;
+}

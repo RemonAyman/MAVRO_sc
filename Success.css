@@ -1,0 +1,62 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #003f6a, #218838);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333; /* Text color */
+}
+
+/* Success Container */
+.success-container {
+    text-align: center;
+    background-color: #ffffff; /* White background */
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+}
+
+/* Success Icon */
+.success-icon {
+    font-size: 100px;
+    color: #28a745; /* Green color for success */
+    margin-bottom: 20px;
+}
+
+/* Headline */
+h1 {
+    font-size: 24px;
+    color: #006f69; /* Turquoise color */
+    margin-bottom: 10px;
+}
+
+/* Paragraph */
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: #555; /* Slightly muted text color */
+}
+
+/* Button Styling */
+button {
+    padding: 12px 20px;
+    background-color: #28a745; /* Green color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: translateY(-2px);
+}
